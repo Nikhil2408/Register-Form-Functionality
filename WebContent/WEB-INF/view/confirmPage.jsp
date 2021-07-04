@@ -23,6 +23,7 @@
 			<th>User Name</th>
 			<th>Email Address</th>
 			<th>Location</th>
+			<th>PostalCode</th>
 			<th>Courses Enrolled</th>
 		</tr>
 		<tr>
@@ -31,6 +32,7 @@
 			<td>${candidate.userName}</td>
 			<td>${candidate.emailAddress}</td>
 			<td>${candidate.location}</td>
+			<td>${candidate.postalCode}</td>
 			<td>
 				<c:forEach var="temp" items="${candidate.coursesEnrolled}">
 					<ul>
