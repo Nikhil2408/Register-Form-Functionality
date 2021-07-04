@@ -20,6 +20,10 @@
         
         <mvc:annotation-driven></mvc:annotation-driven>
         
+        <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        	<property name="basenames" value="resources/message"/>	
+        </bean>
+       
         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         	<property name="prefix" value="/WEB-INF/view/"/>
         	<property name="suffix" value=".jsp"/>
